@@ -25,6 +25,65 @@
       margin:30px auto;
     }
 
+    /* DRIVER CARD */
+    .driver-card{
+      background:#151b29;
+      border:1px solid #293246;
+      border-radius:18px;
+      padding:22px;
+      margin-bottom:20px;
+      box-shadow:0 10px 35px rgba(0,0,0,.35);
+    }
+
+    .driver-title{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:8px;
+    }
+
+    .driver-title h2{
+      font-size:22px;
+    }
+
+    .driver-subtitle{
+      color:#9ca3af;
+      font-size:14px;
+      margin-bottom:18px;
+      line-height:1.5;
+    }
+
+    .driver-info{
+      display:grid;
+      gap:9px;
+      margin-bottom:18px;
+    }
+
+    .driver-info div{
+      background:#0f1420;
+      border-radius:10px;
+      padding:12px;
+      color:#dbe3f0;
+      font-size:14px;
+    }
+
+    .driver-download{
+      display:block;
+      text-align:center;
+      background:#2563eb;
+      color:#fff;
+      text-decoration:none;
+      padding:14px;
+      border-radius:10px;
+      font-weight:bold;
+      font-size:15px;
+      transition:.2s;
+    }
+
+    .driver-download:hover{
+      background:#1d4ed8;
+    }
+
     .post{
       background:#151b29;
       border:1px solid #293246;
@@ -115,6 +174,28 @@
       text-decoration:none;
       margin-top:18px;
     }
+
+    @media(max-width:600px){
+      body{
+        padding:12px;
+      }
+
+      .container{
+        margin:15px auto;
+      }
+
+      .driver-card{
+        padding:18px;
+      }
+
+      .content{
+        padding:20px;
+      }
+
+      h1{
+        font-size:24px;
+      }
+    }
   </style>
 </head>
 
@@ -122,10 +203,69 @@
 
   <div class="container">
 
+    <!-- ============================= -->
+    <!-- TOP DRIVER SECTION             -->
+    <!-- ============================= -->
+
+    <div class="driver-card">
+
+      <div class="driver-title">
+        <span style="font-size:28px;">🔌</span>
+        <h2>QcomMtk Driver Setup</h2>
+      </div>
+
+      <p class="driver-subtitle">
+        Qualcomm + MediaTek USB Driver for mobile flashing
+        and servicing.
+      </p>
+
+      <div class="driver-info">
+
+        <div>
+          📦 <strong>File:</strong>
+          QcomMtk_Driver_Setup_V4.0.1.6.7z
+        </div>
+
+        <div>
+          🔢 <strong>Version:</strong> 4.0.1.6
+        </div>
+
+        <div>
+          💾 <strong>Size:</strong> 14.22 MB
+        </div>
+
+        <div>
+          🗂️ <strong>Format:</strong> 7Z
+        </div>
+
+        <div>
+          📱 <strong>Support:</strong>
+          Qualcomm + MediaTek
+        </div>
+
+      </div>
+
+      <a
+        class="driver-download"
+        href="https://www.mediafire.com/file/ypqexzoo7voskrr/QcomMtk_Driver_Setup_V4.0.1.6.7z/file"
+        target="_blank"
+        rel="noopener noreferrer">
+        ⬇️ DOWNLOAD DRIVER
+      </a>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- REALME FRP POST                -->
+    <!-- ============================= -->
+
     <div class="post">
 
       <div class="image-box">
-        <img src="assets/realme-frp.jpg" alt="Realme FRP One Click">
+        <img
+          src="assets/realme-frp.jpg"
+          alt="Realme FRP One Click">
       </div>
 
       <div class="content">
@@ -164,7 +304,7 @@
 
         <div class="warning">
           ⚠️ <strong>Important:</strong><br>
-          Service use karne se pehle exact device model
+          Service karne se pehle exact device model
           verify karein. Device owner / authorized technician
           ke liye hi service use karein. Bill ya box available
           ho to saath rakhein.
@@ -173,7 +313,8 @@
         <a
           class="whatsapp"
           href="https://wa.me/918800297984?text=Hello%20Flash%20Master%20India%2C%20mujhe%20Realme%20FRP%20One%20Click%20service%20ke%20baare%20mein%20information%20chahiye."
-          target="_blank">
+          target="_blank"
+          rel="noopener noreferrer">
           💬 Contact on WhatsApp
         </a>
 
